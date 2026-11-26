@@ -140,7 +140,13 @@ html{scroll-behavior:smooth;scroll-padding-top:18px} button{font:inherit;color:i
 @media(max-width:700px){
   .hero .info h1{font-size:30px;margin:6px 0 8px}
   .hero .intro{margin:7px 0 10px}
-  .hero .mainphoto img{height:clamp(235px,38vh,305px)}
+  .hero .mainphoto img{
+    height:auto;
+    aspect-ratio:4 / 5;
+    max-height:560px;
+    object-fit:contain;
+    object-position:center;
+  }
   .ident{padding:24px 0}
   .ident-grid{gap:10px}
   .ident-terms{grid-column:auto}
